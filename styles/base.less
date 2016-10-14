@@ -22,7 +22,7 @@ atom-text-editor, :host {
 
     .line-number {
         background-color: @syntax-gutter-background-color-selected;
-        color: @syntax-gutter-text-color-selected;
+        color: cyan;
       }
 
       &.cursor-line-no-selection {
@@ -38,16 +38,16 @@ atom-text-editor, :host {
   }
 
   .invisible {
-    color: @syntax-text-color;
+    color: @blue;
   }
 
   .cursor {
-    color: @syntax-cursor-color;
+    color: @cyan;
   }
 
   .selection .region {
     background-color: @syntax-selection-color;
-  }
+
 }
 
 atom-text-editor .search-results .marker .region,
@@ -81,7 +81,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.other.unit {
-    color: @orange;
+    color: @green;
   }
 }
 
@@ -90,14 +90,14 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .constant {
-  color: @orange;
+  color: @cyan;
 
   &.character.escape {
     color: @cyan;
   }
 
   &.numeric {
-    color: @orange;
+    color: @blue;
   }
 
   &.other.color {
@@ -134,7 +134,7 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @cyan;
 
     .source.ruby.embedded {
-      color: @orange;
+      color: white;
     }
   }
 
@@ -174,6 +174,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.section.embedded {
     color: darken(@red, 10%);
+  }
+
+.name .icon .icon-file-text {
+    color: @blue;
   }
 
 }
@@ -218,7 +222,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.other.attribute-name {
-    color: @orange;
+    color: @blue;
 
     &.id {
       color: @blue;
@@ -232,7 +236,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.link {
-    color: @orange;
+    color: @blue;
   }
 
   &.require {
@@ -255,7 +259,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .markup {
   &.bold {
-    color: @orange;
+    color: @green;
     font-weight: bold;
   }
 
@@ -285,7 +289,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.quote {
-    color: @orange;
+    color: @cyan;
   }
 
   &.raw.inline {
